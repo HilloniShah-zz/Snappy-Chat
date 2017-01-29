@@ -64,6 +64,8 @@ html, body {
   background-color:pink;
   color: purple;
   padding: 20px;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .logout{
