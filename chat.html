@@ -10,28 +10,14 @@
 <body>
 <div class="member-area">
         <div class="user-info">
-              Hilloni Shah
+            <span id="username"></span>
           <span class="logout"> LogOut </span>
         </div>
-    <div class="members">
+    <div class="members" id="members">
       <div class="member">
 
       </div>
-        <div class="member active">
-          Priyanka
-        </div>
-        <div class="member">
-          Malti
-        </div>
-        <div class="member">
-          Hitesh
-        </div>
-        <div class="member">
-          Prachi
-        </div>
-        <div class="member">
-          Mansi
-        </div>
+
     </div>
 </div>
 
@@ -40,65 +26,35 @@
               Priyanka
         </div>
 
-        <div class="messages">
-          <div class="message">
-                Hii..
-          </div>
-
-          <div class="message by-user">
-              whatsup??
-          </div>
-          <div class="message ">
-                chill Bro.. ;)
-          </div>
-          <div class="message by-user">
-                What u doin??
-          </div>
-          <div class="message ">
-                Ok gotta go...Byeee!!!
-          </div>
-          <div class="message">
-                Hii..
-          </div>
-
-          <div class="message by-user">
-              whatsup??
-          </div>
-          <div class="message ">
-                chill Bro.. ;)
-          </div>
-          <div class="message by-user">
-                What u doin??
-          </div>
-          <div class="message ">
-                Ok gotta go...Byeee!!!
-          </div>
-          
-            <div class="message">
-                  Hii..
-            </div>
-
-            <div class="message by-user">
-                whatsup??
-            </div>
-            <div class="message ">
-                  chill Bro.. ;)
-            </div>
-            <div class="message by-user">
-                  What u doin??
-            </div>
-            <div class="message ">
-                  Ok gotta go...Byeee!!!
-            </div>
+        <div class="messages" id="messages">
 
         </div>
 
         <div class="chat-form">
-              <input type="text" class="chat-message"
+              <input type="hidden" id="chat_id" />
+              <input id="message-text" type="text" class="chat-message"
               placeholder="Write your message and press enter..." />
+              <button id="send-button">Send </button>
         </div>
 
 </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBXvy27J5qqu1RHBhsiiOaFCwc-VKVTyxY",
+      authDomain: "snappychat-dfe8c.firebaseapp.com",
+      databaseURL: "https://snappychat-dfe8c.firebaseio.com",
+      storageBucket: "snappychat-dfe8c.appspot.com",
+      messagingSenderId: "1035009514188"
+      };
+      firebase.initializeApp(config);
+  </script>
+
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
 
 </body>
 
